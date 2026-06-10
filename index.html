@@ -230,7 +230,7 @@ const BADGES = [
 
 function buildBadgesHTML() {
   return BADGES.map(b =>
-    `<td style="padding-right:4px;vertical-align:middle;"><img src="${b.src}" alt="${b.alt}" width="52" height="52" style="display:block;border:0;"></td>`
+    `<td style="padding-right:4px;vertical-align:middle;"><img src="${b.src}" alt="${b.alt}" width="52" style="display:block;border:0;height:auto;max-width:52px;"></td>`
   ).join('');
 }
 
